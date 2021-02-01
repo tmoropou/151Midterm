@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityOSC;
+
 public class Ball : MonoBehaviour
 {
     public float speed = 5f;
