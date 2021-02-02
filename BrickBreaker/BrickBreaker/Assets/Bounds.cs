@@ -20,5 +20,7 @@ public class Bounds : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other) {
         other.GetComponent<Ball>().Respawn();
+        OSCHandler.Instance.SendMessageToClient("pd", "/unity/lose", 1);
+        OSCHandler.Instance.SendMessageToClient("pd", "/unity/lose", 2);
     }
 }

@@ -15,7 +15,7 @@ public class Brick : MonoBehaviour
 
         OSCHandler.Instance.Init();
         OSCHandler.Instance.SendMessageToClient("pd", "/unity/trigger", "ready");
-        OSCHandler.Instance.SendMessageToClient("pd", "/unity/playseq", 1);
+        OSCHandler.Instance.SendMessageToClient("pd", "/unity/oscplayseq", 1);
 
     }
 
