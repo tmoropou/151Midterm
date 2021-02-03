@@ -267,30 +267,30 @@ running;
 #X obj 970 742 loadbang;
 #X obj 972 769 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 927 378 dac~;
-#X obj 1003 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 811 378 dac~;
+#X obj 887 178 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 585 299 *~;
-#X obj 576 344 dac~;
-#X obj 649 267 vline~;
-#X obj 648 175 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 477 301 *~;
+#X obj 468 346 dac~;
+#X obj 541 269 vline~;
+#X obj 540 177 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 642 137 r paddlehit;
-#X obj 1003 140 r brickhit;
-#X text 563 110 Trigger when ball hits paddle;
-#X text 924 113 Trigger when brick is hit;
+#X obj 534 139 r paddlehit;
+#X obj 887 140 r brickhit;
+#X text 455 112 Trigger when ball hits paddle;
+#X text 808 113 Trigger when brick is hit;
 #X obj 577 558 r losesound;
 #X obj 577 601 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X text 547 520 Trigger when ball is missed;
-#X obj 556 248 osc~;
+#X obj 448 250 osc~;
 #X obj 687 649 noise~;
-#X obj 940 312 *~;
-#X obj 995 271 vline~;
+#X obj 824 312 *~;
+#X obj 879 271 vline~;
 #X obj 688 761 *~;
 #X obj 752 729 vline~;
 #X obj 680 818 dac~;
-#X obj 888 246 phasor~;
+#X obj 772 246 phasor~;
 #X text 919 725 delay effect processor;
 #N canvas 17 91 1701 988 delayLine2 0;
 #X floatatom 347 76 5 0 0 0 - - -;
@@ -313,9 +313,9 @@ running;
 #X connect 6 0 3 0;
 #X connect 8 0 0 0;
 #X connect 9 0 5 0;
-#X restore 936 344 pd delayLine2;
+#X restore 820 344 pd delayLine2;
 #X text 1471 999 melody section has delay;
-#X msg 556 199 622.2;
+#X msg 448 201 622.2;
 #X msg 1539 819 0.15 25 \, 0 100 75;
 #X msg 912 804 0.7;
 #X msg 576 706 open fail.wav;
@@ -325,14 +325,15 @@ running;
 #X obj 625 743 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 571 645 loadbang;
-#X msg 649 215 0.7 50 \, 0 200 50;
-#X msg 888 200 233;
+#X msg 541 217 0.7 50 \, 0 200 50;
+#X msg 772 200 233;
 #X text 368 708 pre-recorded sample plays;
 #X text 699 608 a noise fade plays simultaneously;
 #X msg 747 626 0.05 25 \, 0 1000 100;
 #X text 2858 909 there are 3 voices to make the triads;
-#X msg 987 219 0.8 150 \, 0.2 100 100 \, 0.8 100 100 \, 0.2 100 100
+#X msg 842 219 0.8 150 \, 0.2 100 100 \, 0.8 100 100 \, 0.2 100 100
 \, 0 200 200;
+#X text 1237 214 toggle to play theme;
 #X connect 6 0 10 0;
 #X connect 8 0 9 0;
 #X connect 10 0 13 0;
